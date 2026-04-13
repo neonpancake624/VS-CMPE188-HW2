@@ -841,62 +841,55 @@
             }
         },
         {
-            "series": "Neural Networks (Single Layer)",
+            "series": "Single layer neural network",
             "level": 1,
             "id": "iris",
-            "algorithm": "Single-Layer Neural Network (Iris)",
-            "description": "Implement a single-layer neural network classifier for the Iris dataset using PyTorch.",
+            "algorithm": "Single layer neural network (iris)",
+            "description": "Implement SL nn for the iri dataset using PyTorch.",
             "interface_protocol": "pytorch_task_v1",
             "requirements": {
-                "data": "Use sklearn.datasets.load_iris; train/validation split.",
-                "implementation": "Single nn.Linear layer; CrossEntropyLoss; SGD.",
-                "evaluation": "Compute MSE, R2, and accuracy on validation.",
-                "main_block": "Train, evaluate, print metrics; assert accuracy > 0.85."
+                "data": "sklearn.datasets.load_iris",
+                "implementation": "Single nn.Linear layer; Adam.",
+                "validation": "Train, evaluate, accuracy > 0.85."
             }
         },
         {
-            "series": "Neural Networks (Single Layer)",
+            "series": "Single layer neural network",
             "level": 2,
             "id": "wine",
-            "algorithm": "Single-Layer Neural Network (Wine)",
-            "description": "Train a single-layer neural network classifier on the Wine dataset with simple regularization.",
+            "algorithm": "Single layer neural network (wine)",
+            "description": "Single layer nn for the wine dataset.",
             "interface_protocol": "pytorch_task_v1",
             "requirements": {
-                "data": "Use sklearn.datasets.load_wine; train/validation split.",
+                "data": "sklearn.datasets.load_wine; train/validation.",
                 "implementation": "Single nn.Linear layer; CrossEntropyLoss; Adam.",
-                "regularization": "Use weight decay or label smoothing.",
-                "evaluation": "Compute MSE, R2, and accuracy on validation.",
-                "main_block": "Train, evaluate, print metrics; assert accuracy > 0.90."
+                "validation": "Train, evaluate, accuracy > 0.90."
             }
         },
         {
-            "series": "Neural Networks (Single Layer)",
+            "series": "Single layer neural network",
             "level": 3,
             "id": "diabetes",
-            "algorithm": "Single-Layer Neural Network (Diabetes Regression)",
-            "description": "Implement a single-layer neural network regressor for the Diabetes dataset with a simple training improvement.",
+            "algorithm": "Single layer neural network (diabetes)",
+            "description": "Single layer nn for a diabetes dataset.",
             "interface_protocol": "pytorch_task_v1",
             "requirements": {
-                "data": "Use sklearn.datasets.load_diabetes; train/validation split.",
-                "implementation": "Single nn.Linear layer; MSELoss; Adam or SGD.",
-                "training": "Add early stopping or LR scheduler.",
-                "evaluation": "Compute MSE, R2, and MAE on validation.",
-                "main_block": "Train, evaluate, print metrics; assert R2 > 0.30."
+                "data": "sklearn.datasets.load_diabetes; train/validation.",
+                "implementation": "Single nn.Linear layer; MSELoss; Adam.",
+                "validation": "Train, evaluate, R2 > 0.30."
             }
         },
         {
-            "series": "Neural Networks (Single Layer)",
+            "series": "Single layer neural network",
             "level": 4,
             "id": "cal_housing",
-            "algorithm": "Single-Layer Neural Network (California Housing)",
-            "description": "Apply a single-layer neural network regressor to the California Housing dataset and compare it against a sklearn baseline.",
+            "algorithm": "Single layer neural network (california housing)",
+            "description": "Single layer nn for a california housing dataset.",
             "interface_protocol": "pytorch_task_v1",
             "requirements": {
-                "data": "Use sklearn.datasets.fetch_california_housing; train/validation split.",
+                "data": "Use sklearn.datasets.fetch_california_housing; train/validation.",
                 "implementation": "Single nn.Linear layer; MSELoss; Adam.",
-                "baseline": "Compare with sklearn LinearRegression.",
-                "evaluation": "Compute MSE, R2, and MAE on validation.",
-                "main_block": "Train, evaluate, print metrics; assert R2 > 0.50."
+                "validation": "Train, evaluate, R2 > 0.50."
             }
         }
     ]
