@@ -845,7 +845,7 @@
             "level": 1,
             "id": "iris",
             "algorithm": "Single layer neural network (iris)",
-            "description": "Implement SL nn for the iri dataset using PyTorch.",
+            "description": "Implement SL nn for the iris dataset.",
             "interface_protocol": "pytorch_task_v1",
             "requirements": {
                 "data": "sklearn.datasets.load_iris",
@@ -871,7 +871,7 @@
             "level": 3,
             "id": "diabetes",
             "algorithm": "Single layer neural network (diabetes)",
-            "description": "Single layer nn for a diabetes dataset.",
+            "description": "Single layer nn for the diabetes dataset.",
             "interface_protocol": "pytorch_task_v1",
             "requirements": {
                 "data": "sklearn.datasets.load_diabetes; train/validation.",
@@ -884,7 +884,7 @@
             "level": 4,
             "id": "cal_housing",
             "algorithm": "Single layer neural network (california housing)",
-            "description": "Single layer nn for a california housing dataset.",
+            "description": "Single layer nn for the california housing dataset.",
             "interface_protocol": "pytorch_task_v1",
             "requirements": {
                 "data": "Use sklearn.datasets.fetch_california_housing; train/validation.",
